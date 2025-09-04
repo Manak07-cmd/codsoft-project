@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Manak Mehra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Manak Mehra</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">Hi, I'm Manak Mehra 👋</h1>
+      <p class="fade-in-delay">An aspiring web developer passionate about building clean, interactive, and user-friendly websites.</p>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+      <img src="https://picsum.photos/250" alt="Profile Picture" class="profile-pic">
+      <div class="about-text">
+        <p>Hello! My name is <strong>Manak Mehra</strong>. I am currently learning web development with a focus on 
+           <strong>HTML, CSS, and JavaScript</strong>. My goal is to create websites that are not only visually appealing 
+           but also easy to use and functional.</p>
+        <p>I enjoy problem-solving, experimenting with new designs, and continuously improving my coding skills. 
+           This landing page is one of my beginner projects where I’m combining creativity with technical learning.</p>
+        <a href="#contact" class="btn">Let’s Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:manakmehra@example.com">manakmehra@example.com</a></p>
+    <p>Phone: +91 9876543210</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manak Mehra | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
